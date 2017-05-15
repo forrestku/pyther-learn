@@ -1,0 +1,7 @@
+jupyter {application} --generate-config
+这时会在该目录下出现.jupyter文件夹，其中包括文件jupyter_application_config.py
+打开该文件，找到如下行
+# c.NotebookApp.notebook_dir = ''
+改为
+c.NotebookApp.notebook_dir = D:\\mycode
+此时双击exe或是cmd运行打开notebook都处于D:\mycode路径。
